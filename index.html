@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ระบบข้อมูลบุคคล</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body, html {
+      height: 100%;
+      overflow: hidden;
+      background-color: #0a0a0a;
+    }
+
+    .background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at center, #0d47a1 0%, #000000 80%);
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .dots {
+      width: 100%;
+      height: 100%;
+      background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+      opacity: 0.05;
+      animation: moveBg 60s linear infinite;
+    }
+
+    @keyframes moveBg {
+      from { background-position: 0 0; }
+      to { background-position: 1000px 1000px; }
+    }
+
+    .content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      height: 100%;
+      color: white;
+      padding: 20px;
+    }
+
+    .logo-img {
+      width: 180px;
+      height: auto;
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .logo {
+      font-size: 2.5rem;
+      color: #ffffff;
+      margin-bottom: 10px;
+      font-weight: bold;
+      text-shadow: 0 0 10px #2196f3;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #bbdefb;
+    }
+
+    .button {
+      padding: 15px 30px;
+      background-color: #2196f3;
+      color: #ffffff;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 0 15px #2196f3;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .button:hover {
+      background-color: #1976d2;
+      transform: scale(1.05);
+    }
+
+    .footer-note {
+      position: absolute;
+      bottom: 20px;
+      font-size: 0.85rem;
+      color: #90caf9;
+      z-index: 2;
+      width: 100%;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="dots"></div>
+  </div>
+  <div class="content">
+    <!-- เพิ่มโลโก้ที่คุณอัปโหลดไว้ -->
+    <img src="images/Messenger_creation_959478FA-CFC3-4599-8CB1-A15CD4BE7B0D.png" alt="โลโก้" class="logo-img" />
+
+    <div class="logo">ระบบข้อมูลบุคคล</div>
+    <div class="subtitle">เข้าถึงข้อมูลบุคคลได้อย่างปลอดภัย รวดเร็ว และเป็นระบบ</div>
+    <button class="button" onclick="location.href='about1.html'">เข้าสู่เว็บไซต์หลัก</button>
+  </div>
+  <div class="footer-note">ข้อมูลของท่านได้รับการปกป้องตามมาตรฐานความปลอดภัย</div>
+</body>
+</html>
